@@ -6,16 +6,25 @@ test('unshort bit.ly', function (t) {
 
   unshort('http://bit.ly/1gLsRzC', function (err, url) {
     t.ok(!!!err, 'must not fail');
-    t.equals(url, 'http://github.com/julianduque');
+    t.equals(url, 'https://github.com/julianduque');
   });
 });
 
 test('unshort buff.ly', function (t) {
   t.plan(2);
 
-  unshort('http://skift.com/2013/12/06/how-albuquerque-tourism-learned-to-love-breaking-bad/', function (err, url) {
+  unshort('http://buff.ly/1967Gq7', function (err, url) {
     t.ok(!!!err, 'must not fail');
     t.equals(url, 'http://skift.com/2013/12/06/how-albuquerque-tourism-learned-to-love-breaking-bad/')
   });
 
+});
+
+test('unshort t.co', function (t) {
+  t.plan(2);
+
+  unshort('http://t.co/HXWgGQoXUd', function (err, url) {
+    t.ok(!!!err, 'must not fail');
+    t.equals(url, 'http://skift.com/2013/12/06/how-albuquerque-tourism-learned-to-love-breaking-bad/')
+  });
 });
