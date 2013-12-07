@@ -1,0 +1,17 @@
+{
+  "name": "unshort",
+  "version": "0.0.0",
+  "description": "URL un-shorter",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Julian Duque <julianduquej@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.29.0"
+  },
+  "devDependencies": {
+    "tape": "~2.3.0"
+  }
+}
