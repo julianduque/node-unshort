@@ -1,6 +1,6 @@
 # unshort
 
-Unshort and URL with Node.js
+Unshort an URL with Node.js
 
 ## Install
 
