@@ -28,3 +28,13 @@ test('unshort t.co', function (t) {
     t.equals(url, 'http://skift.com/2013/12/06/how-albuquerque-tourism-learned-to-love-breaking-bad/')
   });
 });
+
+
+test('unshort fb.me', function (t) {
+  t.plan(2);
+
+  unshort('http://fb.me/2ZfaNVDmo', function (err, url) {
+    t.ok(!!!err, 'must not fail');
+    t.equals(url, 'https://www.facebook.com/martinfabiancabrera/posts/10152399745389409');
+  });
+});
