@@ -1,11 +1,20 @@
 {
   "name": "unshort",
-  "version": "0.0.1",
-  "description": "URL un-shorter",
+  "version": "0.0.2",
+  "description": "URL un-shorter for Node.js",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianduque/node-unshort"
+  },
+  "keywords": [
+    "unshort",
+    "url",
+    "url unshorter"
+  ],
   "author": "Julian Duque <julianduquej@gmail.com>",
   "license": "MIT",
   "dependencies": {
