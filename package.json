@@ -1,6 +1,6 @@
 {
   "name": "unshort",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "URL unshortener for Node.js",
   "main": "index.js",
   "bin": "unshort.js",
