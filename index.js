@@ -11,6 +11,10 @@ module.exports = function (url, callback) {
       return callback(err);
     }
 
+    if (r.statusCode !== 301 && r.statusCode !== 302 && r.statusCode !== 200) {
+      return callback(new Error(url + ' returns ' + r.statusCode))
+    }
+
     var location = r.request.href || url;
     callback(null, location);
   });
